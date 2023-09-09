@@ -43,10 +43,11 @@ class Consom_dial(tk.Tk):
         
     def SetDialValue(self, v):
         self.value = self.getAnAngle(v)
+        self.canvas1.itemconfigure(self.textitem, text=round(self.value*self.scale2,1))
         angle = 135 - self.value
         tkimage = ImageTk.PhotoImage(self.needle.rotate(angle))
         self.canvas1.create_image(160, 160, image=tkimage)    
-        self.canvas1.itemconfigure(self.textitem, text=round(self.value*self.scale2,1))
+        
         # self.canvas1.update()
         # self.after(1000, self.SetDialValue(10))
         
