@@ -33,7 +33,7 @@ class Consom_dial(tk.Tk):
         self.needle = Image.open("needle3.png")
         
         #self.canvas1.update()
-        self.Master.after(1000, self.SetDialValue(10))
+        #self.Master.after(1000, self.SetDialValue(10))
     
     def getAnAngle(self, v):
         return round(self.scale1 * v,1)
@@ -51,6 +51,6 @@ class Consom_dial(tk.Tk):
         tkimage = ImageTk.PhotoImage(self.needle.rotate(angle))
         self.canvas_obj = self.canvas1.create_image(160, 160, image=tkimage)    
         self.canvas1.itemconfigure(self.textitem, text=round(self.value*self.scale2,1))
-        self.Master.after(1000, self.SetDialValue(20))
+        #self.Master.after(1000, self.SetDialValue(20))
         
         
