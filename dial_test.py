@@ -1,4 +1,3 @@
-import tkinter as tk
 from Consom_dial import *
 from tkinter import ttk
 # Create object
