@@ -10,7 +10,7 @@ class Consom_dial(tk.Tk):
     # scale of 30
     scale1 = 0.0
     scale2 = 0.0
-    canvas_obj = None
+    value = 0.0
     
     def __init__(self) -> None:
         super().__init__()
